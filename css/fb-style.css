@@ -17,3 +17,12 @@
   /*vertical-align: middle;*/
   /*box-sizing: border-box;*/
 }
+
+.fb-beers-brewery {
+  margin-top: 50px;
+}
+
+.fb-featured-beer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
