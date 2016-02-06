@@ -1,4 +1,19 @@
-.fb-image-filter {
+/*.fb-image-filter {
   padding: 20px 5px;
   background: rgba(0,0,0,0.3);
+}*/
+
+.intro .intro-body {
+  background: rgba(0,0,0,0.3);
+}
+
+.fb-download-section-filter {
+  background: rgba(0,0,0,0.3);
+  display: inline-block;
+  padding: 100px 0;
+  height: 100%;
+  width: 100%;
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  /*box-sizing: border-box;*/
 }
