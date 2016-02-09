@@ -26,3 +26,22 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
+.mc-field-group {
+  padding: 8px 0px;
+}
+
+.fb-subscription-input {
+  width: 95%;
+  padding: 8px 5px;
+  border-radius:0;
+  border: 0px solid black;
+}
+
+.fb-subscription-submit {
+  width: 95%;
+  padding: 8px 5px;
+  border-radius:0;
+  border: 0px solid black;
+
+}
