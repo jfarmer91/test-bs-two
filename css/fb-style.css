@@ -39,9 +39,10 @@
 }
 
 .fb-subscription-submit {
+  background-color: #fff;
+  color: #000;
   width: 95%;
   padding: 8px 5px;
   border-radius:0;
   border: 0px solid black;
-
 }
