@@ -17,12 +17,12 @@ function imageAutoSwipe() {
 
       var carouselIndicators = "<li data-target='#myCarousel' data-slide-to='0' class='active'></li>";
 
-      var carouselInner = "<div class='item active'><img src='gallery/" + imageObject[0].name + "' alt='site-image' width='460' height='345'></div>";
+      var carouselInner = "<div class='item active'><img src='gallery/" + imageObject[0].name + "' alt='site-image' width='100%'></div>";
 
       for ( i = 1; i < imageObject.length; i++ ) {
         carouselIndicators += "<li data-target='#myCarousel' data-slide-to='" + i + "'></li>";
 
-        carouselInner += "<div class='item'><img src='gallery/" + imageObject[i].name + "' alt='site-image' width='460' height='345'></div>"
+        carouselInner += "<div class='item'><img src='gallery/" + imageObject[i].name + "' alt='site-image' width='100%'></div>"
       }
 
       document.getElementById('fb-js-carousel-indicators').innerHTML = carouselIndicators;
