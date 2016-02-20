@@ -30,6 +30,16 @@ h6 {
     letter-spacing: 1px;
 }
 
+h5.fb-footer-header {
+  margin: 35px 0 20px;
+}
+
+@media(min-width: 1200px) {
+  h5.fb-footer-header {
+    margin-top:0;
+  }
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -236,6 +246,11 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+.fb-social-media-spacing {
+  margin-top: 5px;
+}
+
+
 @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
@@ -274,6 +289,10 @@ a:focus {
     padding-top: 100px;
 }
 
+#fb-external-links {
+  padding-top: 50px;
+}
+
 .download-section {
     width: 100%;
     padding: 50px 0;
@@ -299,7 +318,7 @@ a:focus {
         padding-top: 150px;
     }
 
-    .content-section-gallery {
+    .fb-content-section-gallery {
       padding-top:75px;
     }
 

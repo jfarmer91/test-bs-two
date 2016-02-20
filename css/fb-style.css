@@ -28,7 +28,11 @@
 }
 
 .mc-field-group {
-  padding: 8px 0px;
+  padding: 0px 2px 8px 2px;
+}
+
+.fb-email-name {
+  margin-left: 2px;
 }
 
 .fb-subscription-input {
