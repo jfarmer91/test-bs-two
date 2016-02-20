@@ -15,13 +15,9 @@ function imageAutoSwipe() {
       var imageObject = JSON.parse(xhttp.responseText);
       console.log(imageObject);
 
-      // var carouselIndicators = "<li data-target='#myCarousel' data-slide-to='0' class='active'></li>";
       var carouselIndicators = "";
 
-
-      // var carouselInner = "<div class='item active'><img src='gallery/" + imageObject[0].name + "' alt='site-image' width='100%'></div>";
       var carouselInner = "";
-
 
       for ( i = 2; i < imageObject.length; i++ ) {
         carouselIndicators += "<li data-target='#myCarousel' data-slide-to='" + i + "'></li>";
@@ -36,9 +32,4 @@ function imageAutoSwipe() {
       document.getElementById('myCarousel').style.display = 'block';
     }
   }
-
-
-
-  var imgTag = document.getElementById('gallery-image-slide');
-
 }

@@ -299,6 +299,10 @@ a:focus {
         padding-top: 150px;
     }
 
+    .content-section-gallery {
+      padding-top:75px;
+    }
+
     .download-section {
         padding: 100px 0;
     }
@@ -306,7 +310,7 @@ a:focus {
     #map {
         height: 400px;
         /*margin-top: 250px;*/
-        margin-top: 50px;
+        margin-top: 25px;
     }
 }
 
