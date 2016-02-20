@@ -23,7 +23,7 @@ function imageAutoSwipe() {
       var carouselInner = "";
 
 
-      for ( i = 1; i < imageObject.length; i++ ) {
+      for ( i = 2; i < imageObject.length; i++ ) {
         carouselIndicators += "<li data-target='#myCarousel' data-slide-to='" + i + "'></li>";
 
         carouselInner += "<div class='item'><img src='gallery/" + imageObject[i].name + "' alt='site-image' width='100%'></div>"
