@@ -112,6 +112,7 @@ a:focus {
 @media (min-width: 768px) {
   .navbar-custom .nav li a {
     font-size: 16px;
+  }
 }
 
 .navbar-custom .nav li a:hover {
