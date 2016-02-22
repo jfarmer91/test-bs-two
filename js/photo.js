@@ -11,9 +11,7 @@ function imageAutoSwipe() {
 
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      console.log(xhttp);
       var imageObject = JSON.parse(xhttp.responseText);
-      console.log(imageObject);
 
       var carouselIndicators = "";
 
