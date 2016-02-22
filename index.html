@@ -37,6 +37,19 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Analytics Tracking Code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // ga('create', 'UA-72717504-1', 'auto');
+      // ga('send', 'pageview');
+
+    </script>
+
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -164,7 +177,7 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map" onclick="window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4789931,-73.2202536,19.42z/data=!4m5!1m2!3m1!2sFoam+Brewers!3m1!1s0x0000000000000000:0xe1cbdbe52021ef94')"></div>
+    <div id="map" onclick="mapEventGA()"></div>
 
 
 
@@ -201,7 +214,7 @@
                     <div class="response" id="mce-success-response" style="display:none"></div>
                   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_760a6632302f76bb85ad59a72_a42dbb5648" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="fb-subscription-submit"></div>
+                    <div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="fb-subscription-submit"  onclick="emailJoinEventGA()"></div>
                   </div>
                   <div class="mc-field-group col-lg-2"></div>
                 </div>
@@ -215,10 +228,10 @@
                 <h5>Social Media</h5>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://www.facebook.com/FoamBrewers/?ref=hl" class="btn btn-default btn-lg fb-social-media-spacing"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        <a href="https://www.facebook.com/FoamBrewers/?ref=hl" class="btn btn-default btn-lg fb-social-media-spacing" target="_blank" onclick="facebookEventGA()"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/foambrewers/" class="btn btn-default btn-lg fb-social-media-spacing"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                        <a href="https://www.instagram.com/foambrewers/" class="btn btn-default btn-lg fb-social-media-spacing" target="_blank" onclick="instagramEventGA()"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
                     </li>
                 </ul>
             </div>
@@ -235,19 +248,19 @@
         <div class="col-sm-6">
           <h5 class="text-center fb-footer-header">News</h5>
           <div class="row text-center" style="margin-top:15px;">
-            <a href="http://www.wptz.com/news/new-brewery-coming-to-burlington/37635382">WPTZ News Channel 5</a>
+            <a href="http://www.wptz.com/news/new-brewery-coming-to-burlington/37635382" target="_blank" onclick="wptzNewsEventGA()">WPTZ News Channel 5</a>
           </div>
           <div class="row text-center" style="margin-top:15px;">
-            <a href="http://www.sevendaysvt.com/BiteClub/archives/2016/01/25/foam-brewers-to-open-on-burlington-waterfront-in-spring">Seven Days</a>
+            <a href="http://www.sevendaysvt.com/BiteClub/archives/2016/01/25/foam-brewers-to-open-on-burlington-waterfront-in-spring" target="_blank" onclick="sevenDaysNewsEventGA()">Seven Days</a>
           </div>
         </div>
         <div class="col-sm-6">
           <h5 class="text-center fb-footer-header">Check Out</h5>
           <div class="row text-center" style="margin-top:15px;">
-            <a href="https://www.facebook.com/House-of-Fermentology-498323433676425/">House of Fermentology</a>
+            <a href="https://www.facebook.com/House-of-Fermentology-498323433676425/" target="_blank" onclick="hofLinkEventGA()">House of Fermentology</a>
           </div>
           <div class="row text-center" style="margin-top:15px;">
-            <a href="https://www.facebook.com/elizadupontphotography/">Eliza du Pont Photography</a>
+            <a href="https://www.facebook.com/elizadupontphotography/" target="_blank" onclick="elizaLinkEventGA()">Eliza du Pont Photography</a>
           </div>
         </div>
       </div>
@@ -278,6 +291,36 @@
 
     <!-- Custom Photo Gallery JavaScript -->
     <script src="js/photo.js"></script>
+
+    <script>
+    function facebookEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Social Media', eventLabel: 'Facebook'});
+    }
+    function instagramEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Social Media', eventLabel: 'Instagram'});
+    }
+    function emailJoinEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Email Listserv', eventLabel: 'Email Listserv'});
+    }
+    function wptzNewsEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'News', eventLabel: 'WPTZ'});
+    }
+    function sevenDaysNewsEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'News', eventLabel: 'Seven Days'});
+    }
+    function elizaLinkEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Check Out Links', eventLabel: 'Eliza du Pont Photography'});
+    }
+    function hofLinkEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Check Out Links', eventLabel: 'House of Fermentology'});
+    }
+    function mapEventGA() {
+      ga('send', 'event', { eventCategory: 'Intermediate Page', eventAction: 'Map', eventLabel: 'MapLink'});
+
+      window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4789931,-73.2202536,19.42z/data=!4m5!1m2!3m1!2sFoam+Brewers!3m1!1s0x0000000000000000:0xe1cbdbe52021ef94');
+    }
+    </script>
+
 
 
 </body>
